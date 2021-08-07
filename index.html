@@ -4,7 +4,76 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/bootstrap-grid.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap"
+      rel="stylesheet"
+    />
     <title>Document</title>
   </head>
-  <body></body>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="menu">
+          <img src="./img/logoPrimary.png" alt="Tykovka" class="logo" />
+          <div class="contacts menu__contacts">
+            <a href="+7(777)777-77-77" class="phone contacts__phone"
+              >+7 (777) 777-77-77</a
+            >
+            <button
+              class="button contacts__button button--primary"
+              data-toggle="modal"
+            >
+              Связаться
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="hero">
+        <div class="container">
+          <div class="hero__content">
+            <div class="row">
+              <div class="hero__text col">
+                <h1 class="title hero__title">
+                  Керамические <br />
+                  изделия
+                  <span class="title--primary">ручной работы</span>
+                </h1>
+                <p class="hero__description">
+                  Я занимаюсь керамикой уже три полных года. Керамика это мое
+                  хобби, а нет ничего лучше чем изделие сделанное с любовью Я
+                  занимаюсь керамикой уже три полных года. Керамика это мое
+                  хобби, а нет ничего лучше чем изделие сделанное с любовью Я
+                  занимаюсь керамикой уже три полных года. Керамика это мое
+                  хобби, а нет ничего лучше чем изделие сделанное с любовью
+                </p>
+                <button
+                  class="button hero__button button--primary hero__button--1"
+                  data-toggle="modal"
+                >
+                  Связаться
+                </button>
+                <a
+                  class="button hero__button button--outline"
+                  href="https://www.instagram.com/tykovka_ceramics/"
+                >
+                  Instagram
+                </a>
+              </div>
+              <div class="hero__ceramics col">
+                <img
+                  src="./img/heroImage.jpg"
+                  alt="ceramics"
+                  class="hero__image"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
 </html>

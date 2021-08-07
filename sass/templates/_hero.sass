@@ -1,0 +1,44 @@
+.hero
+    position: relative
+    margin-top: 85px
+    background: $dark url("./../../img/ceramics.jpg") no-repeat center / cover
+    display: flex
+    flex-direction: column
+    justify-content: center
+    color: $light
+    height: 90vh
+    &::before
+        content: ''
+        position: absolute
+        top: 0
+        left: 0
+        width: 100%
+        height: 100%
+        background-color: rgba($dark, 0.7)
+    &__content
+        position: relative
+    &__title
+        margin-top: 0
+        margin-bottom: 1rem
+    &__description
+        font-size: 1.57rem
+        max-width: 500px
+        line-height: 131%
+        margin: 0
+        margin-bottom: 3rem
+    &__ceramics
+        display: flex
+        justify-content: space-around
+    &__image
+        height: 420px
+        border: 3px solid $primary
+        border-radius: 10px
+    &__button
+        text-decoration: none
+        font-size: 1rem
+        padding: 15px 35px
+        &--1
+            margin-right: 30px
+    
+        
+        
