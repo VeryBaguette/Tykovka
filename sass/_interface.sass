@@ -18,9 +18,38 @@
         border: 1px solid $light
         background-color: transparent
         color: $light
+
 .title
     font-family: Yeseva One
     font-weight: normal
     font-size: 3.3rem
     &--primary
         color: $primary
+
+.section
+    &__title
+        font-family: Yeseva One
+        font-weight: 400
+        font-size: 2rem
+        text-align: center
+        margin-top: 4rem 
+        margin-bottom: 1.5rem
+    &__image
+            display: flex
+            justify-content: center
+            align-items: center
+            margin-bottom: 6rem
+            &::before
+                box-sizing: border-box
+                content: ""
+                width: 32px
+                height: 2px
+                background-color: #E3B873
+                margin-right: 10px
+            &::after
+                box-sizing: border-box
+                content: ""
+                width: 32px
+                height: 2px
+                background-color: #E3B873
+                margin-left: 10px
