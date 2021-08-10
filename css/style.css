@@ -38,6 +38,17 @@
   font-family: "Futura Book", sans-serif;
   margin-right: 45px;
 }
+.phoneIcon {
+  height: 1rem;
+  margin-bottom: -0.2rem;
+  margin-right: 0.3rem;
+}
+
+.contacts {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
 .hero {
   position: relative;
