@@ -53,7 +53,7 @@
 .hero {
   position: relative;
   margin-top: 85px;
-  background: #131313 url("./../../img/ceramics.jpg") no-repeat center/cover;
+  background: #131313 url("./../img/ceramics.jpg") no-repeat center/cover;
   display: flex;
   flex-direction: column;
   justify-content: center;
