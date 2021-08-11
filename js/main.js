@@ -9,5 +9,4 @@ $(document).ready(function () {
   closeBtn.on("click", function () {
     modal.toggleClass("modal--visible");
   });
-  console.log("HELLLLO!!!!");
 });
