@@ -566,3 +566,9 @@ input[type=checkbox], input[type=radio] {
 .contact__text--phone {
   font-size: 1.27rem;
 }
+
+.instagramIcon {
+  height: 1.4rem;
+  margin-bottom: -0.3rem;
+  margin-right: 0.3rem;
+}
