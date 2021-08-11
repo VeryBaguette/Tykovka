@@ -88,7 +88,7 @@
   justify-content: space-around;
 }
 .hero__image {
-  background: url("./../../img/heroImage.jpg") no-repeat center/cover;
+  background: url("./../img/heroImagee.jpg") no-repeat center/cover;
   height: 420px;
   width: 400px;
   border: 3px solid #E3B873;
@@ -533,7 +533,7 @@ input[type=checkbox], input[type=radio] {
   top: 0;
   width: 28px;
   height: 28px;
-  background: transparent url("./../../img/close.svg") no-repeat center;
+  background: transparent url("./../img/closee.svg") no-repeat center;
   border: none;
   margin: 12px;
   cursor: pointer;
