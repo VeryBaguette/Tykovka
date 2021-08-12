@@ -13,144 +13,6 @@
   font-style: normal;
   font-display: swap;
 }
-.header {
-  position: fixed;
-  left: 0;
-  top: 0;
-  width: 100%;
-  z-index: 99;
-  background-color: #131313;
-  padding: 25px 0;
-}
-
-.menu {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.logo {
-  max-width: 125px;
-}
-
-.phone {
-  color: #E3B873;
-  font-family: "Futura Book", sans-serif;
-  margin-right: 45px;
-}
-.phoneIcon {
-  height: 1rem;
-  margin-bottom: -0.2rem;
-  margin-right: 0.3rem;
-}
-
-.contacts {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.hero {
-  position: relative;
-  margin-top: 85px;
-  background: #131313 url("./../img/ceramics.jpg") no-repeat center/cover;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  color: #ffffff;
-  height: 90vh;
-}
-.hero::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(19, 19, 19, 0.7);
-}
-.hero__content {
-  position: relative;
-}
-.hero__title {
-  margin-top: 0;
-  margin-bottom: 1rem;
-}
-.hero__description {
-  font-size: 1.57rem;
-  max-width: 500px;
-  line-height: 131%;
-  margin: 0;
-  margin-bottom: 3rem;
-}
-.hero__ceramics {
-  display: flex;
-  justify-content: space-around;
-}
-.hero__image {
-  background: url("./../img/heroImagee.jpg") no-repeat center/cover;
-  height: 420px;
-  width: 400px;
-  border: 3px solid #E3B873;
-  border-radius: 10px;
-}
-.hero__button {
-  text-decoration: none;
-  font-size: 1rem;
-  padding: 15px 35px;
-}
-.hero__button--1 {
-  margin-right: 30px;
-}
-
-.wares {
-  background: url("./../../img/backgroundLight.jpg") no-repeat center/cover;
-}
-.wares__logo {
-  width: 100px;
-}
-.wares__image {
-  max-width: 100%;
-  max-height: 100%;
-}
-
-.card {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  margin-bottom: 5rem;
-}
-.card__text {
-  position: relative;
-  max-width: 15rem;
-  background-color: #fff;
-  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.03);
-  margin: 0 auto;
-  margin-top: -3rem;
-  padding: 1.7rem 2.1rem;
-}
-.card__description {
-  font-size: 1.07rem;
-  color: #959595;
-}
-.card__image {
-  max-width: 350px;
-}
-.card__pricetag {
-  position: absolute;
-  left: 0;
-  bottom: -1.79rem;
-  font-size: 1.3rem;
-  font-family: "Yeseva One", cursive;
-  font-weight: normal;
-  text-transform: uppercase;
-  background-color: #E3B873;
-  color: #ffffff;
-  padding: 1.214rem 2.6rem;
-  border: none;
-}
-
 .button {
   padding: 11px 24px;
   border: none;
@@ -470,6 +332,187 @@ input[type=checkbox], input[type=radio] {
 
 .col-30 {
   flex-basis: 30%;
+}
+
+.container {
+  width: 85%;
+  margin: auto;
+}
+
+.mlBtn {
+  margin-left: 45px;
+}
+
+@media screen and (max-width: 1080px) {
+  .hero__image {
+    visibility: hidden;
+  }
+  .hero__text {
+    flex-basis: 100%;
+    margin-top: 400px;
+  }
+
+  html {
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 575px) {
+  .container {
+    padding: 0;
+  }
+
+  .header {
+    max-width: 100%;
+  }
+
+  .title {
+    font-size: 3rem;
+  }
+
+  .header__button {
+    margin-left: 30px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .logo {
+    width: 100px;
+  }
+}
+.header {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 99;
+  background-color: #131313;
+  padding: 25px 0;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  max-width: 125px;
+}
+
+.phone {
+  color: #E3B873;
+  font-family: "Futura Book", sans-serif;
+}
+.phoneIcon {
+  height: 1rem;
+  margin-bottom: -0.2rem;
+  margin-right: 0.3rem;
+}
+
+.contacts {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero {
+  position: relative;
+  margin-top: 85px;
+  background: #131313 url("./../img/ceramics.jpg") no-repeat center/cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #ffffff;
+  height: 90vh;
+}
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(19, 19, 19, 0.7);
+}
+.hero__content {
+  position: relative;
+}
+.hero__title {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+.hero__description {
+  font-size: 1.57rem;
+  max-width: 500px;
+  line-height: 131%;
+  margin: 0;
+  margin-bottom: 3rem;
+}
+.hero__ceramics {
+  display: flex;
+  justify-content: space-around;
+}
+.hero__image {
+  background: url("./../img/heroImagee.jpg") no-repeat center/cover;
+  height: 420px;
+  width: 400px;
+  border: 3px solid #E3B873;
+  border-radius: 10px;
+}
+.hero__button {
+  text-decoration: none;
+  font-size: 1rem;
+  padding: 15px 35px;
+}
+.hero__button--1 {
+  margin-right: 30px;
+}
+
+.wares {
+  background: url("./../../img/backgroundLight.jpg") no-repeat center/cover;
+}
+.wares__logo {
+  width: 100px;
+}
+.wares__image {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-bottom: 5rem;
+}
+.card__text {
+  position: relative;
+  max-width: 210px;
+  background-color: #fff;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.03);
+  margin: 0 auto;
+  margin-top: -3rem;
+  padding: 1.7rem 2.1rem;
+}
+.card__description {
+  font-size: 15px;
+  color: #959595;
+}
+.card__image {
+  max-width: 350px;
+}
+.card__pricetag {
+  position: absolute;
+  left: 0;
+  bottom: -1.79rem;
+  font-size: 18px;
+  font-family: "Yeseva One", cursive;
+  font-weight: normal;
+  text-transform: uppercase;
+  background-color: #E3B873;
+  color: #ffffff;
+  padding: 1.214rem 2.6rem;
+  border: none;
 }
 
 .footer {
