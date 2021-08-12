@@ -1,10 +1,9 @@
 @media screen and (max-width: 1080px)
     .hero
         &__image
-            visibility: hidden
+            display: none
         &__text
             flex-basis: 100%
-            margin-top: 400px
     html
         font-size: 12px
 
@@ -21,10 +20,12 @@
 @media screen and (max-width: 500px)
     .logo 
         width: 100px
+    .header
+        height: 36px
 
 @media screen and (max-width: 430px)
     .header__phone
-        visibility: hidden
+        display: none
 
 @media screen and (max-width: 400px)
     .card__image
@@ -33,3 +34,37 @@
 @media screen and (max-width: 370px)
     .card__image
         width: 310px
+
+@media screen and (max-width: 370px)
+    .modal__contacts
+        padding: 20px 30px
+
+@media screen and (max-width: 350px)
+    .title
+        font-size: 2.5rem
+    .contact__name
+        font-size: 16px   
+    .contact__text
+        font-size: 14px
+    .logo
+        width: 90px
+    .hero
+        &__text
+            display: flex
+            flex-direction: column
+        &__button
+            margin: 0
+            text-align: center
+            &--1
+                display: none
+    .card__pricetag
+        font-size: 16px
+        padding: 14px 25px
+
+@media screen and (max-width: 340px)
+    .card__image
+        width: 290px
+
+@media screen and (max-width: 325px)
+    .modal__contacts
+        padding: 20px
