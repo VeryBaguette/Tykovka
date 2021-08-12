@@ -378,6 +378,21 @@ input[type=checkbox], input[type=radio] {
     width: 100px;
   }
 }
+@media screen and (max-width: 430px) {
+  .header__phone {
+    visibility: hidden;
+  }
+}
+@media screen and (max-width: 400px) {
+  .card__image {
+    width: 330px;
+  }
+}
+@media screen and (max-width: 370px) {
+  .card__image {
+    width: 310px;
+  }
+}
 .header {
   position: fixed;
   left: 0;
@@ -468,7 +483,7 @@ input[type=checkbox], input[type=radio] {
 }
 
 .wares {
-  background: url("./../../img/backgroundLight.jpg") no-repeat center/cover;
+  background: url("./../img/backgroundLight.jpg") no-repeat center/cover;
 }
 .wares__logo {
   width: 100px;
