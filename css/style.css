@@ -490,6 +490,58 @@ input[type=checkbox], input[type=radio] {
   padding: 35px 0;
 }
 
+.newyear {
+  position: relative;
+  background: #131313 url("./../img/newyear.jpg") no-repeat center/cover;
+  color: #ffffff;
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+}
+.newyear::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(19, 19, 19, 0.7);
+}
+.newyear__timer {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+.newyear__title {
+  text-align: center;
+  font-size: 3rem;
+}
+
+.timer {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+}
+.timer__wrapper {
+  width: 400px;
+  display: flex;
+  justify-content: space-around;
+}
+.timer__block {
+  height: 100px;
+  width: 80px;
+  color: #131313;
+  background-color: #ffffff;
+  border: 3px solid #E3B873;
+  border-radius: 5px;
+  font-size: 1.5rem;
+  font-family: "Roboto", sans-serif;
+}
+.timer__gross {
+  font-size: 4rem;
+  font-weight: 600;
+}
+
 .modal {
   opacity: 0;
   visibility: hidden;
@@ -620,6 +672,12 @@ input[type=checkbox], input[type=radio] {
     height: 36px;
   }
 }
+@media screen and (max-width: 450px) {
+  .timer__block {
+    height: 90px;
+    width: 70px;
+  }
+}
 @media screen and (max-width: 430px) {
   .header__phone {
     display: none;
@@ -633,6 +691,17 @@ input[type=checkbox], input[type=radio] {
 @media screen and (max-width: 370px) {
   .card__image {
     width: 310px;
+  }
+
+  .timer__block {
+    height: 80px;
+    width: 55px;
+    font-size: 1.2rem;
+    font-weight: 400;
+    border: 2px solid #E3B873;
+  }
+  .timer__gross {
+    font-size: 3.4rem;
   }
 }
 @media screen and (max-width: 370px) {

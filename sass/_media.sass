@@ -23,6 +23,11 @@
     .header
         height: 36px
 
+@media screen and (max-width: 450px)
+    .timer__block
+        height: 90px
+        width: 70px
+
 @media screen and (max-width: 430px)
     .header__phone
         display: none
@@ -34,6 +39,16 @@
 @media screen and (max-width: 370px)
     .card__image
         width: 310px
+    .timer
+        &__block
+            height: 80px
+            width: 55px
+            font-size: 1.2rem
+            font-weight: 400
+            border: 2px solid $primary
+        &__gross
+            font-size: 3.4rem
+        
 
 @media screen and (max-width: 370px)
     .modal__contacts
