@@ -50,4 +50,5 @@ $(document).ready(function () {
     }
   }
   setClock(".timer", deadline);
+  new WOW().init();
 });

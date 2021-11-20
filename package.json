@@ -23,5 +23,8 @@
     "gulp-sass": "^5.0.0",
     "jquery": "^3.6.0",
     "sass": "^1.37.5"
+  },
+  "dependencies": {
+    "animate.css": "^4.1.1"
   }
 }

@@ -16,14 +16,28 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
     <title>Tykovka ceramics</title>
   </head>
   <body>
     <header class="header">
       <div class="container">
         <div class="menu">
-          <img src="./img/logoPrimary.png" alt="Tykovka" class="logo" />
-          <div class="contacts menu__contacts">
+          <img
+            src="./img/logoPrimary.png"
+            alt="Tykovka"
+            class="logo animate__animated animate__fadeInLeft"
+          />
+          <div
+            class="
+              contacts
+              menu__contacts
+              animate__animated animate__fadeInRight
+            "
+          >
             <div class="phone__wrapper header__phone">
               <img src="./img/phone.png" alt="phone" class="phoneIcon" />
               <a href="tel:+77774805625" class="phone contacts__phone">
@@ -235,7 +249,7 @@
       </section>
       <div class="newyear">
         <div class="container">
-          <div class="newyear__timer">
+          <div class="newyear__timer wow animate__animated animate__zoomIn">
             <h1 class="title newyear__title">
               Времени до
               <span class="title--primary">Нового года:</span>
@@ -266,8 +280,19 @@
       <footer class="footer">
         <div class="container">
           <div class="menu">
-            <img src="./img/logoPrimary.png" alt="Tykovka" class="logo" />
-            <div class="contacts menu__contacts">
+            <img
+              src="./img/logoPrimary.png"
+              alt="Tykovka"
+              class="logo wow animate__animated animate__fadeInLeft"
+            />
+            <div
+              class="
+                contacts
+                menu__contacts
+                wow
+                animate__animated animate__fadeInRight
+              "
+            >
               <div class="phone__wrapper header__phone">
                 <img src="./img/phone.png" alt="phone" class="phoneIcon" />
                 <a href="tel:+77774805625" class="phone contacts__phone">
@@ -369,6 +394,7 @@
       integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
       crossorigin="anonymous"
     ></script>
+    <script src="././js/wow.min.js"></script>
     <script src="././js/main.js"></script>
   </body>
 </html>
