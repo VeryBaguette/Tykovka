@@ -51,4 +51,19 @@ $(document).ready(function () {
   }
   setClock(".timer", deadline);
   new WOW().init();
+  var player;
+  $(".video__play").on("click", () => {
+    console.log("click");
+    player = new YT.Player("player", {
+      height: "350",
+      width: "100%",
+      videoId: "dQw4w9WgXcQ",
+      events: {
+        onReady: videoPlay,
+      },
+    });
+  });
+  function videoPlay(event) {
+    event.target.playVideo();
+  }
 });
