@@ -55,7 +55,7 @@ $(document).ready(function () {
   $(".video__play").on("click", () => {
     console.log("click");
     player = new YT.Player("player", {
-      height: "350",
+      height: "100%",
       width: "100%",
       videoId: "dQw4w9WgXcQ",
       events: {

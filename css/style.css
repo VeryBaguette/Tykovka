@@ -685,6 +685,10 @@ input[type=checkbox], input[type=radio] {
   .header__button {
     margin-left: 30px;
   }
+
+  .wares__video {
+    min-height: 20rem;
+  }
 }
 @media screen and (max-width: 500px) {
   .logo {
@@ -704,6 +708,10 @@ input[type=checkbox], input[type=radio] {
 @media screen and (max-width: 430px) {
   .header__phone {
     display: none;
+  }
+
+  .wares__video {
+    min-height: 17.5rem;
   }
 }
 @media screen and (max-width: 400px) {
@@ -726,8 +734,11 @@ input[type=checkbox], input[type=radio] {
   .timer__gross {
     font-size: 3.4rem;
   }
-}
-@media screen and (max-width: 370px) {
+
+  .wares__video {
+    min-height: 16rem;
+  }
+
   .modal__contacts {
     padding: 20px 30px;
   }
@@ -765,14 +776,26 @@ input[type=checkbox], input[type=radio] {
     font-size: 16px;
     padding: 14px 25px;
   }
+
+  .wares__video {
+    min-height: 15rem;
+  }
 }
 @media screen and (max-width: 340px) {
   .card__image {
     width: 290px;
   }
+
+  .wares__video {
+    min-height: 14.5rem;
+  }
 }
 @media screen and (max-width: 325px) {
   .modal__contacts {
     padding: 20px;
+  }
+
+  .wares__video {
+    min-height: 14rem;
   }
 }
