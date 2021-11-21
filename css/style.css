@@ -449,7 +449,7 @@ input[type=checkbox], input[type=radio] {
   margin: auto;
   max-width: 45rem;
   min-height: 25rem;
-  background: #131313 url("/img/videoMask.jpg") center no-repeat;
+  background: #131313 url("./../img/videoMask.jpg") center no-repeat;
   box-shadow: 0px 20px 50px rgba(0, 0, 0, 0.15);
 }
 .wares__video::before {
