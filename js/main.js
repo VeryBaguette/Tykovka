@@ -4,10 +4,12 @@ $(document).ready(function () {
     closeBtn = $(".modal__close");
   modalBtn.on("click", function () {
     modal.toggleClass("modal--visible");
+    document.body.style.overflow = "hidden";
   });
 
   closeBtn.on("click", function () {
     modal.toggleClass("modal--visible");
+    document.body.style.overflow = "";
   });
 
   const deadline = "2022-01-01";
