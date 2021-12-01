@@ -1,16 +1,47 @@
 $(document).ready(function () {
+  //Opening and closing modal by user
   var modal = $(".modal"),
     modalBtn = $("[data-toggle=modal]"),
-    closeBtn = $(".modal__close");
-  modalBtn.on("click", function () {
-    modal.toggleClass("modal--visible");
-    document.body.style.overflow = "hidden";
-  });
-
-  closeBtn.on("click", function () {
+    closeBtn = $(".modal__close"),
+    isClosed = true;
+  function closeModal() {
     modal.toggleClass("modal--visible");
     document.body.style.overflow = "";
+    isClosed = true;
+  }
+  function openModal() {
+    modal.toggleClass("modal--visible");
+    document.body.style.overflow = "hidden";
+    isClosed = false;
+  }
+
+  modalBtn.on("click", function () {
+    openModal();
   });
+  closeBtn.on("click", function () {
+    closeModal();
+  });
+  document.addEventListener("keydown", (e) => {
+    if (e.code === "Escape" && !isClosed) {
+      closeModal();
+    }
+  });
+
+  //Opening modal by scrolling
+
+  function showModalByScroll() {
+    if (
+      window.pageYOffset + document.documentElement.clientHeight >=
+      document.documentElement.scrollHeight
+    ) {
+      openModal();
+      window.removeEventListener("scroll", showModalByScroll);
+    }
+  }
+
+  window.addEventListener("scroll", showModalByScroll);
+
+  //Setting new year timer
 
   const deadline = "2022-01-01";
 
@@ -52,7 +83,13 @@ $(document).ready(function () {
     }
   }
   setClock(".timer", deadline);
+
+  //Initializing WOW
+
   new WOW().init();
+
+  //Adding RickRoll
+
   var player;
   $(".video__play").on("click", () => {
     console.log("click");
