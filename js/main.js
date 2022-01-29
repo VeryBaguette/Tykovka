@@ -43,7 +43,7 @@ $(document).ready(function () {
 
   //Setting new year timer
 
-  const deadline = "2022-01-01";
+  const deadline = "2023-01-01";
 
   function getTimeRemaining(endTime) {
     const t = Date.parse(endTime) - new Date().getTime(),

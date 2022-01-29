@@ -546,7 +546,7 @@ input[type=checkbox], input[type=radio] {
   text-align: center;
 }
 .timer__wrapper {
-  width: 400px;
+  width: 500px;
   display: flex;
   justify-content: space-around;
 }
@@ -556,13 +556,17 @@ input[type=checkbox], input[type=radio] {
   color: #131313;
   background-color: #ffffff;
   border: 3px solid #E3B873;
-  border-radius: 5px;
-  font-size: 1.5rem;
+  border-radius: 7.5px;
   font-family: "Roboto", sans-serif;
 }
 .timer__gross {
-  font-size: 4rem;
+  font-size: 45px;
   font-weight: 600;
+}
+.timer__text {
+  font-size: 18px;
+  font-weight: 600;
+  padding-top: 5px;
 }
 
 .modal {
@@ -704,6 +708,9 @@ input[type=checkbox], input[type=radio] {
     height: 90px;
     width: 70px;
   }
+  .timer__gross {
+    font-size: 40px;
+  }
 }
 @media screen and (max-width: 430px) {
   .header__phone {
@@ -727,12 +734,14 @@ input[type=checkbox], input[type=radio] {
   .timer__block {
     height: 80px;
     width: 55px;
-    font-size: 1.2rem;
     font-weight: 400;
     border: 2px solid #E3B873;
   }
   .timer__gross {
-    font-size: 3.4rem;
+    font-size: 33px;
+  }
+  .timer__text {
+    font-size: 15px;
   }
 
   .wares__video {
